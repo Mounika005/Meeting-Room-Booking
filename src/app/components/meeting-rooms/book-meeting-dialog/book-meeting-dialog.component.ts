@@ -127,9 +127,7 @@ export class BookMeetingDialogComponent implements OnInit, OnDestroy {
       this.roomDetails = this.meetingService.getAvailableRooms(
         date,
         startTime,
-        endTime,
-        this.meetingRooms,
-        this.currentMeetingList
+        endTime
       );
       // this.availableRooms=this.roomDetails.filter((room:any)=>room.status==="Available")
     }

@@ -6,8 +6,8 @@ name!: string
 }
 
 export class BookMeetingRoomModel{
-    
-    date!:Date | string
+    id?:number
+    meetingDate!:Date | string
     startTime!:Time |string
     endTime!:Time | string
     userName!:string 

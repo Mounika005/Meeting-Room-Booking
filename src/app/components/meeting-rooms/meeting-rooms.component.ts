@@ -55,7 +55,7 @@ const dialogRef= this.dialog.open(BookMeetingDialogComponent,{
   hasBackdrop: false,
   height: 'auto',
   maxHeight: 'auto',
-  data: {date:'',startTime:"",endTime:"",userName:this.username,meetingRoom:"",agenda:""},
+  data: {meetingDate:'',startTime:"",endTime:"",userName:this.username,meetingRoom:"",agenda:""},
   position: {
     left: '18em',
   },

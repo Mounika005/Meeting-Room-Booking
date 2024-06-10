@@ -29,7 +29,7 @@
       <label for="meetingRoom">Meeting Room</label>
       <select id="meetingRoom" formControlName="meetingRoom"  class="wide-select">
         <option  class="wide-select" value="" >Choose Meeting Room</option>
-        <option   class="wide-select" *ngFor="let room of roomDetails" [disabled]="room.status!=='Available'">
+        <option   class="wide-select" *ngFor="let room of roomDetails" value="{{room.room?.name}}" [disabled]="room.status!=='Available'">
             {{room.room?.name}} -- {{room.status}}
         </option>
     </select>
